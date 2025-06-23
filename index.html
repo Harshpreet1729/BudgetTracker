@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BUDGET TRACKER</h1>
+
+    <div id="balance">Amount left:₹1000</div>
+
+    <form id="transaction-form">
+        <input type="text" id="name" placeholder="Transaction Name" required />
+        <input type="number" id="amount" placeholder="Amount (+/-)" required />
+        <input type="date" id="date" required/>
+        <button type="submit">Add</button>
+    </form>
+<div>
+    <label for="sort">Sort By Amount:</label>
+    <select id="sort">
+        <option value="none">None</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+    </select>
+</div>
+<ul id="transaction-list"></ul>
+
+<div id="monthly-summary">
+    <h3>Total by month:</h3>
+    <ul id="month-total-list"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
